@@ -28,7 +28,7 @@ The final schematic for the and gate consists of a nand gate with the output fee
 
 <img src="img/and_schematic.png" alt="inverter layout" width="400"/>
 
-The symbol for the inverter is shown below:
+The symbol for the and gate is shown below:
 
 <img src="img/and_symbol.png" alt="inverter layout" width="400"/>
 
@@ -36,7 +36,7 @@ The symbol for the inverter is shown below:
 #### Xschem Simulation
 The following image depicts the testbench setup to simulate the and gate and all possible combination of inputs.
 
-<img src="img/and_testbench.png" alt="inverter layout" width="400"/>
+<img src="img/and_test_bench.png" alt="inverter layout" width="400"/>
 
 For the simulation I chose the typical model of mosfets (TT_Models). To test all potential input combinations, I fed a square wave into inputs A and B with the A input have a period that is twice as long as the B input. 
 

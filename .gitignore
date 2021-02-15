@@ -1,3 +1,4 @@
 _spiceinit
 xschemrc
 *.sublime*
+pandoc_command

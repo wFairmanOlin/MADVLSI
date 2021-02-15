@@ -1,0 +1,10 @@
+magic
+tech sky130A
+timestamp 1612928340
+<< checkpaint >>
+rect -50 -35 220 330
+use nand  nand_0
+timestamp 1612927299
+transform 1 0 330 0 1 -20
+box -380 -15 -110 350
+<< end >>

@@ -1,0 +1,10 @@
+magic
+tech sky130A
+timestamp 1612928320
+<< checkpaint >>
+rect 220 -35 425 295
+use inverter  inverter_0
+timestamp 1612928256
+transform 1 0 335 0 1 -15
+box -115 -20 90 310
+<< end >>

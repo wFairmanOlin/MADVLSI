@@ -1,0 +1,237 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VN                                         |Vn                                         
+VP                                         |Vp                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inverter and inverter are equivalent.
+
+Subcircuit summary:
+Circuit 1: nand                            |Circuit 2: nand                            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: nand                            |Circuit 2: nand                            
+
+---------------------------------------------------------------------------------------
+Net: a_n490_80#                            |Net: VN                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__nfet_01v8/4 = 1            
+                                           |                                           
+(no matching net)                          |Net: A                                     
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+(no matching net)                          |Net: B                                     
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: B                                     |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: A                                     |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VN                                    |Net: net1                                  
+  sky130_fd_pr__nfet_01v8/4 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/4 = 1            
+                                           |                                           
+Net: Y                                     |Net: Y                                     
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: nand                            |Circuit 2: nand                            
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8M4        
+                                           |  (1,3) = (3,2)                            
+                                           |  2 = 2                                    
+                                           |  4 = 2                                    
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8M3        
+                                           |  (1,3) = (3,3)                            
+                                           |  2 = 2                                    
+                                           |  4 = 3                                    
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v81         |(no matching instance)                     
+  (1,3) = (3,2)                            |                                           
+  2 = 2                                    |                                           
+  4 = 3                                    |                                           
+                                           |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v82         |(no matching instance)                     
+  (1,3) = (3,2)                            |                                           
+  2 = 2                                    |                                           
+  4 = 3                                    |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v8M2        
+                                           |  (1,3) = (4,3)                            
+                                           |  2 = 2                                    
+                                           |  4 = 4                                    
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v8M1        
+                                           |  (1,3) = (4,3)                            
+                                           |  2 = 2                                    
+                                           |  4 = 4                                    
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_01v83         |(no matching instance)                     
+  (1,3) = (4,3)                            |                                           
+  2 = 2                                    |                                           
+  4 = 4                                    |                                           
+                                           |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v80         |(no matching instance)                     
+  (1,3) = (4,3)                            |                                           
+  2 = 2                                    |                                           
+  4 = 4                                    |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+  Flattening non-matched subcircuits nand nand
+Subcircuit summary:
+Circuit 1: and.spice                       |Circuit 2: and_xschem.spice                
+-------------------------------------------|-------------------------------------------
+inverter (1)                               |inverter (1)                               
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: and.spice                       |Circuit 2: and_xschem.spice                
+
+---------------------------------------------------------------------------------------
+Net: nand_0/Y                              |Net: net1                                  
+  inverter/A = 1                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  inverter/A = 1                           
+                                           |                                           
+Net: VSUBS                                 |Net: A                                     
+  inverter/VN = 1                          |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/4 = 2            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /nand_0/a_n490_80#                    |Net: B                                     
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: nand_0/A                              |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: nand_0/B                              |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: nand1/net1                            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |  sky130_fd_pr__nfet_01v8/4 = 1            
+                                           |                                           
+(no matching net)                          |Net: VN                                    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__nfet_01v8/4 = 1            
+                                           |  inverter/Vn = 1                          
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: and.spice                       |Circuit 2: and_xschem.spice                
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: nand1/sky130_fd_pr__nfet_01v8M4  
+                                           |  (1,3) = (3,3)                            
+                                           |  2 = 2                                    
+                                           |  4 = 3                                    
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nand1/sky130_fd_pr__nfet_01v8M3  
+                                           |  (1,3) = (4,3)                            
+                                           |  2 = 2                                    
+                                           |  4 = 3                                    
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: nand_0/sky130_fd_pr__nfet_01v81  |(no matching instance)                     
+  (1,3) = (4,2)                            |                                           
+  2 = 2                                    |                                           
+  4 = 4                                    |                                           
+                                           |                                           
+                                           |                                           
+Instance: nand_0/sky130_fd_pr__nfet_01v82  |(no matching instance)                     
+  (1,3) = (4,2)                            |                                           
+  2 = 2                                    |                                           
+  4 = 4                                    |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: nand1/sky130_fd_pr__pfet_01v8M2  
+                                           |  (1,3) = (5,4)                            
+                                           |  2 = 2                                    
+                                           |  4 = 5                                    
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nand1/sky130_fd_pr__pfet_01v8M1  
+                                           |  (1,3) = (5,4)                            
+                                           |  2 = 2                                    
+                                           |  4 = 5                                    
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: nand_0/sky130_fd_pr__pfet_01v83  |(no matching instance)                     
+  (1,3) = (5,4)                            |                                           
+  2 = 2                                    |                                           
+  4 = 5                                    |                                           
+                                           |                                           
+                                           |                                           
+Instance: nand_0/sky130_fd_pr__pfet_01v80  |(no matching instance)                     
+  (1,3) = (5,4)                            |                                           
+  2 = 2                                    |                                           
+  4 = 5                                    |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Netlists do not match.

@@ -1,20 +1,21 @@
-timestamp 1612928256
+timestamp 1613055644
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
-use inverter inverter_0 1 0 670 0 1 -30
 use nand nand_0 1 0 660 0 1 -40
+use inverter inverter_0 1 0 670 0 1 -30
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "nand_0/A" "inverter_0/A" 6.65789
-cap "inverter_0/VN" "nand_0/B" -1.42109e-14
-cap "inverter_0/A" "inverter_0/Y" 15.6316
-cap "inverter_0/VN" "inverter_0/A" 39.6
-cap "inverter_0/VP" "inverter_0/A" 25.8261
-cap "inverter_0/VP" "inverter_0/Y" 18.5625
-cap "inverter_0/VN" "inverter_0/VP" 2.84217e-14
-merge "nand_0/VN" "inverter_0/VN" -73.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -360 0 0 0 0 0 0 0 0 0 0
-merge "inverter_0/VN" "VSUBS"
-merge "nand_0/Y" "inverter_0/A" -22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
-merge "nand_0/VP" "inverter_0/VP" -73.8 0 0 0 0 0 -560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -360 0 0 0 0 0 0 0 0 0 0
+cap "nand_0/VN" "nand_0/VP" 2.84217e-14
+cap "nand_0/VN" "nand_0/Y" 39.6
+cap "nand_0/VP" "inverter_0/Y" 18.5625
+cap "inverter_0/Y" "nand_0/Y" 15.6316
+cap "nand_0/VN" "nand_0/B" -1.42109e-14
+cap "nand_0/VP" "nand_0/Y" 25.8261
+cap "nand_0/A" "nand_0/VP" 1.33227e-15
+cap "nand_0/A" "nand_0/Y" 6.65789
+merge "inverter_0/VN" "nand_0/VN" -73.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -360 0 0 0 0 0 0 0 0 0 0
+merge "nand_0/VN" "VSUBS"
+merge "inverter_0/A" "nand_0/Y" -22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/VP" "nand_0/VP" -73.8 0 0 0 0 0 -560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -360 0 0 0 0 0 0 0 0 0 0

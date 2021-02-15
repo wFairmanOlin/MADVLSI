@@ -28,7 +28,7 @@ The final schematic for the and gate consists of a nand gate with the output fee
 
 ![](img/and_schematic.png)
 
-The symbol for the inverter is shown below:
+The symbol for the and gate is shown below:
 
 ![](img/nand_symbol.png)
 

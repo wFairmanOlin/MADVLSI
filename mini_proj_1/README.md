@@ -30,7 +30,7 @@ The final schematic for the and gate consists of a nand gate with the output fee
 
 The symbol for the and gate is shown below:
 
-![](img/nand_symbol.png)
+![](img/and_symbol.png)
 
 
 ### Xschem Simulation
@@ -64,7 +64,7 @@ By simply combining the nand and inverter layouts I was able to create the follo
 ![](img/and_layout.png)
 
 ## Layout Vs Schematic
-To compare the netlists from the layout and schematic files I used netgen with the `lvs.py` wrapper. The results can be found in the `comp.out`. The following section a print out from the `comp.out` file:
+To compare the netlists from the layout and schematic files I used netgen with the `lvs.py` wrapper. The results can be found in the `comp.out`. The following section is a print out from the `comp.out` file:
 
 ```
 Subcircuit summary:

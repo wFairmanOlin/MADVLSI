@@ -1,0 +1,68 @@
+Flattening unmatched subcell dff_4_wide in circuit schematic/sreg.spice (0)(4 instances)
+Flattening unmatched subcell dff_4_wide_ports in circuit layout/shift_register.spice (1)(4 instances)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Cell inverter disconnected node: phi
+
+Subcircuit summary:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+Vn                                         |gnd **Mismatch**                           
+A                                          |d **Mismatch**                             
+Y                                          |~d **Mismatch**                            
+Vp                                         |vdd **Mismatch**                           
+(no matching pin)                          |phi                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for inverter and inverter altered to match.
+
+Subcircuit summary:
+Circuit 1: schematic/sreg.spice            |Circuit 2: layout/shift_register.spice     
+-------------------------------------------|-------------------------------------------
+inverter (1)                               |inverter (1)                               
+sky130_fd_pr__nfet_01v8 (32)               |sky130_fd_pr__nfet_01v8 (32)               
+sky130_fd_pr__pfet_01v8 (32)               |sky130_fd_pr__pfet_01v8 (32)               
+Number of devices: 65                      |Number of devices: 65                      
+Number of nets: 37 **Mismatch**            |Number of nets: 34 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: schematic/sreg.spice            |Circuit 2: layout/shift_register.spice     
+
+---------------------------------------------------------------------------------------
+Net: phi                                   |Net: inverter_0/phi                        
+  sky130_fd_pr__nfet_01v8/2 = 16           |  sky130_fd_pr__pfet_01v8/2 = 19           
+  sky130_fd_pr__pfet_01v8/2 = 16           |  sky130_fd_pr__nfet_01v8/2 = 19           
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 6        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 6        
+                                           |                                           
+Net: net2                                  |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: net4                                  |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: net6                                  |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+The top level cell failed pin matching.

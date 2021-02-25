@@ -39,4 +39,4 @@ value=".option wnflag=1
 }
 C {devices/code_shown.sym} 320 -50 0 0 {name=s1 only_toplevel=false value=".tran .01n 1u
 .save all"}
-C {/home/madvlsi/Desktop/madvlsi/mini_proj_2/schematic/dff_3.sym} 190 0 0 0 {name=X1}
+C {/home/madvlsi/Desktop/madvlsi/mini_proj_2/schematic/dff_4_wide.sym} 190 0 0 0 {name=X1}

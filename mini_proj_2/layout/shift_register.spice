@@ -1,0 +1,40 @@
+* SPICE3 file created from shift_register.ext - technology: sky130A
+
+.subckt dff_4_wide_ports d ~d q ~q phi vdd gnd
+X0 a_50_1530# phi d vdd sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 a_50_350# phi gnd gnd sky130_fd_pr__nfet_01v8 ad=2.5e+11p pd=2.5e+06u as=2e+12p ps=1.2e+07u w=1e+06u l=150000u
+X2 ~q q a_310_2260# vdd sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
+X3 vdd a_50_1530# a_50_2260# vdd sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X4 q phi a_50_1530# gnd sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X5 ~q phi a_50_2260# gnd sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X6 q ~q a_310_1530# vdd sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
+X7 vdd a_50_2260# a_50_1530# vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X8 gnd q ~q gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 a_50_1090# phi gnd gnd sky130_fd_pr__nfet_01v8 ad=2.5e+11p pd=2.5e+06u as=0p ps=0u w=1e+06u l=150000u
+X10 a_310_2260# phi vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 a_50_1530# a_50_2260# a_50_1090# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X12 gnd ~q q gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X13 a_310_1530# phi vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X14 a_50_2260# phi ~d vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X15 a_50_2260# a_50_1530# a_50_350# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt inverter phi ~d gnd d vdd
+X0 gnd d ~d gnd sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 vdd d ~d vdd sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+.ends
+
+
+* Top level circuit shift_register
+
+Xdff_4_wide_ports_0 inverter_0/d inverter_0/~d inverter_0/phi dff_4_wide_ports_1/~d
++ inverter_0/phi inverter_0/vdd VSUBS dff_4_wide_ports
+Xinverter_0 inverter_0/phi inverter_0/~d VSUBS inverter_0/d inverter_0/vdd inverter
+Xdff_4_wide_ports_1 inverter_0/phi dff_4_wide_ports_1/~d inverter_0/phi dff_4_wide_ports_2/~d
++ inverter_0/phi inverter_0/vdd VSUBS dff_4_wide_ports
+Xdff_4_wide_ports_2 inverter_0/phi dff_4_wide_ports_2/~d inverter_0/phi dff_4_wide_ports_3/~d
++ inverter_0/phi inverter_0/vdd VSUBS dff_4_wide_ports
+Xdff_4_wide_ports_3 inverter_0/phi dff_4_wide_ports_3/~d dff_4_wide_ports_3/q dff_4_wide_ports_3/~q
++ inverter_0/phi inverter_0/vdd VSUBS dff_4_wide_ports
+.end
+

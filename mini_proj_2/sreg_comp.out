@@ -1,0 +1,67 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Cell inverter disconnected node: phi
+
+Subcircuit summary:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+gnd                                        |gnd                                        
+d                                          |d                                          
+~d                                         |~d                                         
+vdd                                        |vdd                                        
+(no matching pin)                          |phi                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for inverter and inverter altered to match.
+
+Subcircuit summary:
+Circuit 1: dff_4_wide                      |Circuit 2: dff_4_wide                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (8)                |sky130_fd_pr__nfet_01v8 (8)                
+sky130_fd_pr__pfet_01v8 (8)                |sky130_fd_pr__pfet_01v8 (8)                
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: dff_4_wide                      |Circuit 2: dff_4_wide                      
+-------------------------------------------|-------------------------------------------
+~d                                         |~d                                         
+d                                          |d                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+q                                          |q                                          
+~q                                         |~q                                         
+phi                                        |phi                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes dff_4_wide and dff_4_wide are equivalent.
+
+Subcircuit summary:
+Circuit 1: schematic/sreg.spice            |Circuit 2: layout/sreg.spice               
+-------------------------------------------|-------------------------------------------
+inverter (1)                               |inverter (1)                               
+dff_4_wide (4)                             |dff_4_wide (4)                             
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes schematic/sreg.spice and layout/sreg.spice are equivalent.
+Circuits match uniquely.

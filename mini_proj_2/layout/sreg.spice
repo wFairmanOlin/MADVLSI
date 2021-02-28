@@ -1,6 +1,6 @@
-* SPICE3 file created from shift_register.ext - technology: sky130A
+* SPICE3 file created from sreg.ext - technology: sky130A
 
-.subckt dff_4_wide_ports d ~d q ~q phi vdd gnd
+.subckt dff_4_wide phi q ~d ~q gnd d vdd
 X0 a_50_1530# phi d vdd sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
 X1 a_50_350# phi gnd gnd sky130_fd_pr__nfet_01v8 ad=2.5e+11p pd=2.5e+06u as=2e+12p ps=1.2e+07u w=1e+06u l=150000u
 X2 ~q q a_310_2260# vdd sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
@@ -25,16 +25,16 @@ X1 vdd d ~d vdd sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u 
 .ends
 
 
-* Top level circuit shift_register
+* Top level circuit sreg
 
-Xdff_4_wide_ports_0 inverter_0/d inverter_0/~d inverter_0/phi dff_4_wide_ports_1/~d
-+ inverter_0/phi inverter_0/vdd VSUBS dff_4_wide_ports
+Xdff_4_wide_2 inverter_0/phi dff_4_wide_3/d dff_4_wide_2/~d dff_4_wide_3/~d VSUBS
++ dff_4_wide_2/d inverter_0/vdd dff_4_wide
+Xdff_4_wide_3 inverter_0/phi dff_4_wide_3/q dff_4_wide_3/~d dff_4_wide_3/~q VSUBS
++ dff_4_wide_3/d inverter_0/vdd dff_4_wide
 Xinverter_0 inverter_0/phi inverter_0/~d VSUBS inverter_0/d inverter_0/vdd inverter
-Xdff_4_wide_ports_1 inverter_0/phi dff_4_wide_ports_1/~d inverter_0/phi dff_4_wide_ports_2/~d
-+ inverter_0/phi inverter_0/vdd VSUBS dff_4_wide_ports
-Xdff_4_wide_ports_2 inverter_0/phi dff_4_wide_ports_2/~d inverter_0/phi dff_4_wide_ports_3/~d
-+ inverter_0/phi inverter_0/vdd VSUBS dff_4_wide_ports
-Xdff_4_wide_ports_3 inverter_0/phi dff_4_wide_ports_3/~d dff_4_wide_ports_3/q dff_4_wide_ports_3/~q
-+ inverter_0/phi inverter_0/vdd VSUBS dff_4_wide_ports
+Xdff_4_wide_0 inverter_0/phi dff_4_wide_1/d inverter_0/~d dff_4_wide_1/~d VSUBS inverter_0/d
++ inverter_0/vdd dff_4_wide
+Xdff_4_wide_1 inverter_0/phi dff_4_wide_2/d dff_4_wide_1/~d dff_4_wide_2/~d VSUBS
++ dff_4_wide_1/d inverter_0/vdd dff_4_wide
 .end
 

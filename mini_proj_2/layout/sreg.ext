@@ -1,0 +1,213 @@
+timestamp 1614282403
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use dff_4_wide dff_4_wide_3 1 0 1820 0 1 -830
+use dff_4_wide dff_4_wide_2 1 0 1350 0 1 -830
+use dff_4_wide dff_4_wide_1 1 0 880 0 1 -830
+use dff_4_wide dff_4_wide_0 1 0 410 0 1 -830
+use inverter inverter_0 1 0 430 0 1 110
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "dff_4_wide_2/d" "dff_4_wide_2/~q" 11.1774
+cap "dff_4_wide_1/~q" "dff_4_wide_2/~q" 13.359
+cap "dff_4_wide_1/a_50_1530#" "dff_4_wide_0/a_50_1530#" 39.0891
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_1/a_50_2260#" 14.4925
+cap "dff_4_wide_1/a_50_2260#" "dff_4_wide_0/a_50_2260#" 28.9849
+cap "inverter_0/~d" "dff_4_wide_0/a_50_1530#" 4.45946
+cap "dff_4_wide_0/a_50_2260#" "dff_4_wide_3/gnd" 8.84835
+cap "dff_4_wide_1/d" "dff_4_wide_3/phi" 153.282
+cap "dff_4_wide_1/a_50_1530#" "dff_4_wide_0/a_50_2260#" 25.0161
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_0/vdd" 3.17308
+cap "dff_4_wide_1/a_50_2260#" "dff_4_wide_0/~q" 103.187
+cap "dff_4_wide_0/vdd" "dff_4_wide_3/gnd" -36
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_2/d" 34.761
+cap "dff_4_wide_0/d" "dff_4_wide_3/gnd" 3.55271e-14
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_1/~q" 51.5934
+cap "dff_4_wide_2/d" "dff_4_wide_3/d" 17.0957
+cap "dff_4_wide_1/a_50_1530#" "dff_4_wide_0/vdd" 6.34615
+cap "dff_4_wide_2/d" "dff_4_wide_0/vdd" -33.3804
+cap "dff_4_wide_1/a_50_1530#" "dff_4_wide_0/~q" 21.9937
+cap "dff_4_wide_1/a_50_2260#" "dff_4_wide_3/phi" 64.2676
+cap "dff_4_wide_0/d" "inverter_0/~d" 7.17391
+cap "dff_4_wide_1/~q" "dff_4_wide_0/~q" 26.7179
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_3/phi" 17.071
+cap "dff_4_wide_3/gnd" "dff_4_wide_3/phi" -150
+cap "dff_4_wide_1/d" "dff_4_wide_1/a_50_2260#" 69.522
+cap "dff_4_wide_1/a_50_1530#" "dff_4_wide_3/phi" 65.2563
+cap "dff_4_wide_3/phi" "dff_4_wide_3/phi" 3.38462
+cap "dff_4_wide_2/d" "dff_4_wide_3/phi" 142.941
+cap "dff_4_wide_1/d" "dff_4_wide_3/gnd" -10.1538
+cap "dff_4_wide_1/~q" "dff_4_wide_3/phi" 211.621
+cap "inverter_0/~d" "dff_4_wide_3/phi" 9.42857
+cap "dff_4_wide_0/d" "dff_4_wide_0/a_50_1530#" 10.1538
+cap "dff_4_wide_2/d" "dff_4_wide_1/d" 34.1913
+cap "dff_4_wide_1/a_50_1530#" "dff_4_wide_1/d" 287.119
+cap "dff_4_wide_1/d" "dff_4_wide_1/~q" 22.3548
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_1/a_50_2260#" 22.8871
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_3/gnd" -3.5
+cap "dff_4_wide_0/d" "dff_4_wide_0/a_50_2260#" 23.503
+cap "dff_4_wide_0/a_50_1530#" "dff_4_wide_3/phi" 31.1143
+cap "dff_4_wide_3/phi" "dff_4_wide_3/phi" 2.35897
+cap "dff_4_wide_1/a_50_1530#" "dff_4_wide_2/a_50_1530#" 23.6148
+cap "dff_4_wide_2/d" "dff_4_wide_2/a_50_1530#" 226.059
+cap "dff_4_wide_2/d" "dff_4_wide_3/gnd" -10.1538
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_1/~q" 10.9968
+cap "dff_4_wide_0/d" "dff_4_wide_0/vdd" 8.75
+cap "inverter_0/~d" "dff_4_wide_3/gnd" 28.2857
+cap "dff_4_wide_0/a_50_2260#" "dff_4_wide_3/phi" 30.7949
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_3/phi" 16.7364
+cap "dff_4_wide_0/vdd" "dff_4_wide_3/phi" -150
+cap "dff_4_wide_0/d" "dff_4_wide_3/phi" 33.685
+cap "dff_4_wide_0/a_50_1530#" "dff_4_wide_3/gnd" 35.1494
+cap "dff_4_wide_0/~q" "dff_4_wide_3/phi" 234.641
+cap "dff_4_wide_1/d" "dff_4_wide_0/vdd" -33.1108
+cap "dff_4_wide_2/~q" "dff_4_wide_3/~q" 26.7179
+cap "dff_4_wide_3/a_50_1530#" "dff_4_wide_1/vdd" 6.34615
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_1/vdd" 3.17308
+cap "dff_4_wide_1/a_50_1530#" "dff_4_wide_2/a_50_1530#" 13.3643
+cap "dff_4_wide_3/phi" "dff_4_wide_3/a_50_2260#" 33.4727
+cap "dff_4_wide_2/d" "dff_4_wide_2/a_50_1530#" 112.622
+cap "dff_4_wide_3/a_50_1530#" "dff_4_wide_2/a_50_1530#" 39.0891
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_3/a_50_2260#" 28.9849
+cap "dff_4_wide_3/gnd" "dff_4_wide_1/vdd" -18
+cap "dff_4_wide_3/d" "dff_4_wide_1/vdd" -33.1108
+cap "dff_4_wide_2/~q" "dff_4_wide_3/a_50_2260#" 103.187
+cap "dff_4_wide_3/d" "dff_4_wide_2/d" 17.0957
+cap "dff_4_wide_3/d" "dff_4_wide_3/~q" 22.3548
+cap "dff_4_wide_3/d" "dff_4_wide_3/a_50_1530#" 287.119
+cap "dff_4_wide_3/gnd" "dff_4_wide_2/a_50_1530#" -319.78
+cap "dff_4_wide_1/~q" "dff_4_wide_3/phi" 23.0206
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_3/phi" 47.5312
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_1/~q" 51.5934
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_1/a_50_2260#" 14.4925
+cap "dff_4_wide_3/d" "dff_4_wide_3/gnd" -10.1538
+cap "dff_4_wide_2/~q" "dff_4_wide_3/phi" 234.641
+cap "dff_4_wide_3/phi" "dff_4_wide_1/vdd" -108.135
+cap "dff_4_wide_2/~q" "dff_4_wide_1/~q" 13.359
+cap "dff_4_wide_3/d" "dff_4_wide_3/a_50_2260#" 69.522
+cap "dff_4_wide_3/phi" "dff_4_wide_2/d" 10.3408
+cap "dff_4_wide_3/phi" "dff_4_wide_3/a_50_1530#" 34.1421
+cap "dff_4_wide_3/phi" "dff_4_wide_2/a_50_1530#" 48.1853
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_2/d" 34.761
+cap "dff_4_wide_3/d" "dff_4_wide_3/q" 34.1913
+cap "dff_4_wide_1/~q" "dff_4_wide_2/a_50_1530#" 10.9968
+cap "dff_4_wide_1/a_50_1530#" "dff_4_wide_2/a_50_1530#" 5.83507
+cap "dff_4_wide_1/a_50_2260#" "dff_4_wide_2/a_50_1530#" 11.4668
+cap "dff_4_wide_2/~q" "dff_4_wide_2/d" 11.1774
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_3/a_50_1530#" 25.0161
+cap "dff_4_wide_2/d" "dff_4_wide_1/vdd" 0.269608
+cap "dff_4_wide_3/d" "dff_4_wide_3/phi" 153.282
+cap "dff_4_wide_2/~q" "dff_4_wide_3/a_50_1530#" 21.9937
+cap "dff_4_wide_3/phi" "dff_4_wide_3/gnd" -648.165
+cap "dff_4_wide_1/a_50_2260#" "dff_4_wide_3/phi" 18.3311
+cap "dff_4_wide_2/~d" "dff_4_wide_1/d" 25.6272
+cap "dff_4_wide_0/~d" "dff_4_wide_3/vdd" 59.8429
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_2/~d" 12.3083
+cap "dff_4_wide_2/~d" "dff_4_wide_3/vdd" -70.9194
+cap "dff_4_wide_2/~d" "dff_4_wide_1/~d" 16.2965
+cap "dff_4_wide_0/d" "dff_4_wide_3/phi" 42.547
+cap "dff_4_wide_3/phi" "dff_4_wide_1/d" 202.622
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_3/vdd" 11.4231
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_3/phi" 15.1666
+cap "dff_4_wide_1/d" "dff_4_wide_1/a_50_1530#" 241.866
+cap "dff_4_wide_3/vdd" "dff_4_wide_3/phi" -87.25
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_1/a_50_1530#" 11.4199
+cap "dff_4_wide_3/vdd" "dff_4_wide_1/a_50_1530#" 16.5
+cap "dff_4_wide_1/~d" "dff_4_wide_3/phi" 194.773
+cap "dff_4_wide_1/~d" "dff_4_wide_1/a_50_1530#" 24.6167
+cap "dff_4_wide_0/d" "dff_4_wide_0/a_50_1530#" 23.5663
+cap "dff_4_wide_3/vdd" "dff_4_wide_0/a_50_1530#" 1.13687e-13
+cap "dff_4_wide_1/d" "dff_4_wide_2/d" 12.2412
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_2/d" 120.933
+cap "dff_4_wide_3/vdd" "dff_4_wide_2/d" 12.341
+cap "dff_4_wide_0/~d" "dff_4_wide_0/a_50_2260#" 20.5356
+cap "dff_4_wide_1/a_50_2260#" "dff_4_wide_1/d" 107.901
+cap "dff_4_wide_2/~d" "dff_4_wide_3/~d" 8.14823
+cap "dff_4_wide_3/d" "dff_4_wide_2/d" 6.1206
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_1/a_50_2260#" 11.9758
+cap "dff_4_wide_1/a_50_2260#" "dff_4_wide_3/vdd" 22.8462
+cap "dff_4_wide_0/a_50_2260#" "dff_4_wide_3/phi" 9.97197
+cap "dff_4_wide_0/a_50_2260#" "dff_4_wide_1/a_50_1530#" 23.9516
+cap "dff_4_wide_1/~d" "dff_4_wide_1/a_50_2260#" 93.7681
+cap "dff_4_wide_0/d" "dff_4_wide_3/vdd" 12.1737
+cap "dff_4_wide_3/vdd" "dff_4_wide_1/d" 13.042
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_3/vdd" 8.25
+cap "dff_4_wide_1/~d" "dff_4_wide_3/vdd" -61.6988
+cap "dff_4_wide_3/~d" "dff_4_wide_2/d" 12.8136
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_2/~d" 46.884
+cap "dff_4_wide_2/~d" "dff_4_wide_3/phi" 184.529
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_3/phi" 4.17957
+cap "dff_4_wide_1/a_50_2260#" "dff_4_wide_0/a_50_2260#" 31.125
+cap "dff_4_wide_0/~d" "dff_4_wide_0/a_50_1530#" 31.2162
+cap "dff_4_wide_3/phi" "dff_4_wide_1/a_50_1530#" 60.0076
+cap "dff_4_wide_0/d" "dff_4_wide_0/a_50_2260#" 6.61134
+cap "dff_4_wide_0/a_50_2260#" "dff_4_wide_3/vdd" 26.2743
+cap "dff_4_wide_0/a_50_1530#" "dff_4_wide_3/phi" 29.6743
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_2/d" 53.9507
+cap "dff_4_wide_0/a_50_1530#" "dff_4_wide_1/a_50_1530#" 22.8397
+cap "dff_4_wide_3/gnd" "dff_4_wide_3/vdd" -24.75
+cap "dff_4_wide_3/phi" "dff_4_wide_2/d" 195.317
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_1/a_50_2260#" 15.5625
+cap "dff_4_wide_0/d" "dff_4_wide_0/~d" 12.913
+cap "dff_4_wide_3/d" "dff_4_wide_3/~q" 25.6272
+cap "dff_4_wide_3/d" "dff_4_wide_3/a_50_2260#" 107.901
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_3/phi" 14.1515
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_3/phi" 44.8409
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_3/vdd" 8.25
+cap "dff_4_wide_3/~d" "dff_4_wide_3/a_50_2260#" 93.7681
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_3/vdd" 11.4231
+cap "dff_4_wide_3/~d" "dff_4_wide_3/~q" 16.2965
+cap "dff_4_wide_3/phi" "dff_4_wide_2/d" 25.7552
+cap "dff_4_wide_2/d" "dff_4_wide_3/vdd" 0.70098
+cap "dff_4_wide_3/phi" "dff_4_wide_3/a_50_1530#" 30.3332
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_3/a_50_2260#" 31.125
+cap "dff_4_wide_3/vdd" "dff_4_wide_3/a_50_1530#" 16.5
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_1/a_50_1530#" 5.91987
+cap "dff_4_wide_2/~d" "dff_4_wide_3/phi" 12.3343
+cap "dff_4_wide_2/~d" "dff_4_wide_3/vdd" 9.22059
+cap "dff_4_wide_3/d" "dff_4_wide_2/d" 6.1206
+cap "dff_4_wide_3/~d" "dff_4_wide_2/d" 12.8136
+cap "dff_4_wide_3/d" "dff_4_wide_3/a_50_1530#" 241.866
+cap "dff_4_wide_3/~d" "dff_4_wide_3/a_50_1530#" 24.6167
+cap "dff_4_wide_3/phi" "dff_4_wide_3/vdd" -595.4
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_2/d" 120.933
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_2/d" 53.9507
+cap "dff_4_wide_2/~d" "dff_4_wide_3/~d" 8.14823
+cap "dff_4_wide_3/q" "dff_4_wide_3/d" 12.2412
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_3/a_50_1530#" 22.8397
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_3/a_50_1530#" 23.9516
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_1/a_50_1530#" 5.5
+cap "dff_4_wide_3/phi" "dff_4_wide_3/a_50_2260#" 8.35914
+cap "dff_4_wide_2/a_50_1530#" "dff_4_wide_1/a_50_2260#" 11.9758
+cap "dff_4_wide_3/a_50_2260#" "dff_4_wide_3/vdd" 22.8462
+cap "dff_4_wide_3/phi" "dff_4_wide_3/d" 202.622
+cap "dff_4_wide_2/a_50_2260#" "dff_4_wide_1/a_50_2260#" 15.5625
+cap "dff_4_wide_3/d" "dff_4_wide_3/vdd" 13.042
+cap "dff_4_wide_2/~d" "dff_4_wide_2/a_50_2260#" 46.884
+cap "dff_4_wide_2/~d" "dff_4_wide_2/a_50_1530#" 12.3083
+cap "dff_4_wide_3/~d" "dff_4_wide_3/phi" 194.773
+cap "dff_4_wide_3/~d" "dff_4_wide_3/vdd" -61.6988
+cap "dff_4_wide_1/a_50_1530#" "dff_4_wide_3/phi" 7.25756
+merge "dff_4_wide_1/q" "dff_4_wide_2/d" -89.895 0 0 0 0 0 0 0 0 0 0 18200 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20400 -540 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/gnd" "dff_4_wide_0/gnd" -843.667 0 0 0 0 0 0 0 0 -42600 -3600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68500 -3120 6400 -8120 0 0 0 0 0 0 0 0 0 0
+merge "dff_4_wide_0/gnd" "dff_4_wide_1/gnd"
+merge "dff_4_wide_1/gnd" "dff_4_wide_2/gnd"
+merge "dff_4_wide_2/gnd" "dff_4_wide_3/gnd"
+merge "dff_4_wide_3/gnd" "VSUBS"
+merge "inverter_0/phi" "dff_4_wide_0/phi" -156.965 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28600 -1640 0 0 0 0 0 0 0 0 0 0
+merge "dff_4_wide_0/phi" "dff_4_wide_1/phi"
+merge "dff_4_wide_1/phi" "dff_4_wide_2/phi"
+merge "dff_4_wide_2/phi" "dff_4_wide_3/phi"
+merge "inverter_0/d" "dff_4_wide_0/d" -24.4975 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2700 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/vdd" "dff_4_wide_0/vdd" -1886.35 0 0 0 0 -299600 -9140 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70300 -8540 0 0 0 0 0 0 0 0 0 0
+merge "dff_4_wide_0/vdd" "dff_4_wide_1/vdd"
+merge "dff_4_wide_1/vdd" "dff_4_wide_2/vdd"
+merge "dff_4_wide_2/vdd" "dff_4_wide_3/vdd"
+merge "inverter_0/~d" "dff_4_wide_0/~d" -22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_4_wide_2/~q" "dff_4_wide_3/~d" 5.525 0 0 0 0 0 0 0 0 0 0 99800 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96800 -540 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_4_wide_2/q" "dff_4_wide_3/d" -51.6 0 0 0 0 0 0 0 0 0 0 66200 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61800 -540 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_4_wide_0/q" "dff_4_wide_1/d" -112.095 0 0 0 0 0 0 0 0 0 0 -6000 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3600 -540 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_4_wide_0/~q" "dff_4_wide_1/~d" -99 0 0 0 0 0 0 0 0 0 0 -20000 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16200 -540 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_4_wide_1/~q" "dff_4_wide_2/~d" -71.62 0 0 0 0 0 0 0 0 0 0 8400 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13400 -540 0 0 0 0 0 0 0 0 0 0 0 0

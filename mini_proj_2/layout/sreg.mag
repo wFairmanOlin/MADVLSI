@@ -1,0 +1,24 @@
+magic
+tech sky130A
+timestamp 1614520823
+use dff_4_wide  dff_4_wide_3
+timestamp 1614520735
+transform 1 0 910 0 1 -415
+box -60 95 265 1330
+use dff_4_wide  dff_4_wide_2
+timestamp 1614520735
+transform 1 0 675 0 1 -415
+box -60 95 265 1330
+use dff_4_wide  dff_4_wide_1
+timestamp 1614520735
+transform 1 0 440 0 1 -415
+box -60 95 265 1330
+use dff_4_wide  dff_4_wide_0
+timestamp 1614520735
+transform 1 0 205 0 1 -415
+box -60 95 265 1330
+use inverter  inverter_0
+timestamp 1614270699
+transform 1 0 215 0 1 55
+box -215 -55 -50 860
+<< end >>

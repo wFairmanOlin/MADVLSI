@@ -36,12 +36,12 @@ C {madvlsi/gnd.sym} 140 -70 0 0 {name=l3 lab=GND}
 C {madvlsi/vdd.sym} 180 -120 0 0 {name=l4 lab=VDD}
 C {madvlsi/gnd.sym} -220 190 0 0 {name=l5 lab=GND}
 C {madvlsi/vsource.sym} -220 160 0 0 {name=V2
-value="pulse(0 1.8 .5ns .5ns .5ns 2ns 5ns)"}
+value="pulse(0 1.8 1ns .5ns .5ns 2ns 5ns)"}
 C {devices/lab_pin.sym} -220 130 1 0 {name=l6 sig_type=std_logic lab=phi}
 C {devices/lab_pin.sym} 180 50 0 0 {name=l7 sig_type=std_logic lab=phi}
 C {madvlsi/gnd.sym} -220 30 0 0 {name=l9 lab=GND}
 C {madvlsi/vsource.sym} -220 0 0 0 {name=V3
-value="pwl(0 0 25n 0 26n 1.8 40n 1.8 41n 0)"}
+value="pwl(0 0 5n 0 6n 1.8 30n 1.8 31n 0)"}
 C {devices/lab_pin.sym} -220 -30 1 0 {name=l10 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 470 -20 2 0 {name=l12 sig_type=std_logic lab=Q3}
 C {devices/lab_pin.sym} 470 20 2 0 {name=l13 sig_type=std_logic lab=~Q3}
@@ -57,7 +57,7 @@ only_toplevel=false
 value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 540 20 0 0 {name=s2 only_toplevel=false value=".tran .0001n 100n
+C {devices/code_shown.sym} 540 20 0 0 {name=s2 only_toplevel=false value=".tran .001n 50n
 .save all"}
 C {/home/madvlsi/Desktop/madvlsi/mini_proj_2/schematic/dff_4_wide.sym} 270 0 0 0 {name=X3}
 C {/home/madvlsi/Desktop/madvlsi/mini_proj_2/schematic/dff_4_wide.sym} 350 0 0 0 {name=X4}

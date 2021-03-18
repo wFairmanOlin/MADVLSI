@@ -41,16 +41,17 @@ value=".option wnflag=1
 C {devices/code_shown.sym} 930 -200 0 0 {name=s1 only_toplevel=false value="
 .param B=0
 .control
-ac dec 20 1 1e12
+ac dec 20 1 1e9
 alterparam B=1
 reset
-ac dec 20 1 1e12
+ac dec 20 1 1e9
 setplot new
 set curplottitle=Loopgain
 let frequency = ac1.frequency
 let T = (ac1.i(v2) + ac2.i(v1))/(ac1.i(v1) + ac2.i(v2))
 let Tmag = db(T)
 let Tphase = 180*cph(T)/pi
+let Treal = real(T)
 plot Tmag Tphase xlog
 .endc"}
 C {devices/lab_pin.sym} 20 110 1 0 {name=l17 sig_type=std_logic lab=vin}

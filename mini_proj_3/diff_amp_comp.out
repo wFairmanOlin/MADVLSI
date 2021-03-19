@@ -1,0 +1,20 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class schematic/diff_amp_lvs.spice:  Merged 8 devices.
+Class layout/diff_amp.spice:  Merged 8 devices.
+
+Subcircuit summary:
+Circuit 1: schematic/diff_amp_lvs.spice    |Circuit 2: layout/diff_amp.spice           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (28)               |sky130_fd_pr__pfet_01v8 (28)               
+sky130_fd_pr__nfet_01v8 (12)               |sky130_fd_pr__nfet_01v8 (12)               
+Number of devices: 40                      |Number of devices: 40                      
+Number of nets: 25                         |Number of nets: 25                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+Cells have no pins;  pin matching not needed.
+Device classes schematic/diff_amp_lvs.spice and layout/diff_amp.spice are equivalent.
+Circuits match uniquely.

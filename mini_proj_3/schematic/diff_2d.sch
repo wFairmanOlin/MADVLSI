@@ -29,14 +29,14 @@ only_toplevel=false
 value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 470 -10 0 0 {name=s1 only_toplevel=false value="
+C {devices/code_shown.sym} 460 -10 0 0 {name=s1 only_toplevel=false value="
 .ac dec 20 1 1e9
 .save all
 "}
 C {devices/lab_pin.sym} 0 -20 1 0 {name=l17 sig_type=std_logic lab=vin}
 C {madvlsi/isource.sym} 110 40 2 0 {name=I1
 value=1.5u}
-C {devices/lab_pin.sym} 620 210 2 0 {name=l24 sig_type=std_logic lab=voutq}
+C {devices/lab_pin.sym} 620 210 2 0 {name=l24 sig_type=std_logic lab=vout}
 C {devices/lab_pin.sym} 110 -20 1 0 {name=l22 sig_type=std_logic lab=vbn}
 C {madvlsi/capacitor.sym} 570 240 0 0 {name=C1
 value=2p

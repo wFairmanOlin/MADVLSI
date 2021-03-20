@@ -1,1 +1,1 @@
-Please view the [jupyter](mini_project_3.ipynb) notebook for a summary of this project.
+Please view the [jupyter notebook](mini_project_3.ipynb) for a summary of this project.
